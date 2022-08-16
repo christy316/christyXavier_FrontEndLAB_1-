@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;    
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+} 
+
+h1{
+    text-align: center;
+    background-color: red;
+    padding: 16px;
+    font-size: 42px;
+    margin: 0;
+}
+
+#navigation ul {
+    margin: 0;
+    background-color: grey;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 8px;    
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.subMenu li a{
+    text-decoration: none;
+    color: lightskyblue;
+    font-size: 14px;
+}
+
+.menu li:hover{
+    background-color: black;
+    padding: 8px;
+}
+
+
+.subMenu li{
+    display: block;
+    background-color: lightgrey;  
+}
+
+.subMenu li:hover{
+    background-color: lightcoral;  
+}
+
+.menu li:nth-child(2):hover .subMenu,
+.menu li:nth-child(3):hover .subMenu{
+    display: block;
+}
+
+.subMenu {
+    position: absolute;
+    display: none;
+    padding: 0;
+}
